@@ -69,7 +69,7 @@ GuiControl, Move, MyEdit, % &quot;x&quot; VarX+10 &quot;y&quot; VarY+5 &quot;w&q
 <p><strong><span class="CommandSyntax">GuiControl</span>, Font</strong>: Changes the control's font to the typeface, size, color, and style currently in effect for its window. For example:</p>
 <pre><a href="Gui.htm#Font">Gui, Font</a>, s18 cRed Bold, Verdana  <em>; If desired, use a line like this to set a new default font for the window.</em>
 GuiControl, Font, MyEdit  <em>; Put the above font into effect for a control.</em></pre>
-<p><strong><span class="CommandSyntax">GuiControl</span>, +/-Option1 +/-Option2 ... </strong>: Add or remove various options and styles. All GUI options (<a href="GuiControls.htm">control-specific</a> and <a href="Gui.htm#OtherOptions">general</a>) are recognized. In the following example, the <a href="Gui.htm#AltSubmit">AltSubmit</a> option is enabled but control's <a href="Gui.htm#label">g-label</a> is removed:
+<p><strong><span class="CommandSyntax">GuiControl</span>, +/-Option1 +/-Option2 ... </strong>: Add or remove various options and styles. All GUI options (<a href="GuiControls.htm">control-specific</a> and <a href="Gui.htm#OtherOptions">general</a>) are recognized, except <em>Theme</em>, which cannot be altered after a control is added. In the following example, the <a href="Gui.htm#AltSubmit">AltSubmit</a> option is enabled but control's <a href="Gui.htm#label">g-label</a> is removed:
 
 GuiControl,  +AltSubmit -g, MyListBox</p>
 <p>In the next example, the OK button is made the new default button:<br>
